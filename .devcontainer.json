@@ -6,11 +6,5 @@
       8080,
       8082
     ],
-    FROM archlinux:latest 
-    RUN pacman -Sy neovim
-    RUN pacman -Sy git
-    RUN pacman -Sy gcc
-    RUN git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-    RUN mkdir git
-    RUN git clone https://github.com/Drone-spec/Deskspec.git ./git/Deskspec
+    "image": "archlinux:latest"
   }
