@@ -6,5 +6,8 @@
       8080,
       8082
     ],
-    "image": "archlinux:latest"
+    FROM archlinux:latest 
+    RUN pacman -Syu
+    RUN pacman -Sy neovim 
+    
   }
